@@ -1,0 +1,30 @@
+{
+  "image_size": 128,
+  "test_images": 802,
+  "test_normal_images": 402,
+  "test_defective_images": 400,
+  "image_level": {
+    "auroc": 0.6065733830845771,
+    "threshold": 3.349816563129425,
+    "tp": 8,
+    "tn": 399,
+    "fp": 3,
+    "fn": 392,
+    "accuracy": 0.5074812967581047,
+    "precision": 0.7272727272727273,
+    "recall": 0.02,
+    "f1": 0.038929440389294405
+  },
+  "localization": {
+    "pixel_threshold": 3.1306915283203125,
+    "mean_iou": 0.027736933799219998,
+    "global_iou": 0.020098637930767924,
+    "defective_images_evaluated": 400
+  },
+  "notes": [
+    "Training used only the normal VisA training images.",
+    "Test labels and masks come from the VisA test split.",
+    "Evaluation used compact 128x128 prepared thumbnails; masks were resized with nearest-neighbour resampling.",
+    "This baseline returns an anomaly distance, not a calibrated confidence."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "training": {
+    "model_type": "pixel_mahalanobis_rgb_anomaly",
+    "image_size": 128,
+    "num_channels": 3,
+    "normal_training_images": 3614,
+    "regularization": 0.01,
+    "aggregation": "99th percentile of per-pixel Mahalanobis distances",
+    "image_threshold_99_5_percentile": 3.349816563129425,
+    "pixel_threshold_99_9_percentile_sampled": 3.1306915283203125,
+    "training_time_note": "Trained on compact 128x128 VisA normal thumbnails.",
+    "training_time_seconds": 13.647
+  },
+  "inference": {
+    "model_type": "pixel_mahalanobis_rgb_anomaly",
+    "image_size": 128,
+    "num_channels": 3,
+    "aggregation": "99th percentile of per-pixel Mahalanobis distances",
+    "image_threshold": 3.349816563129425,
+    "pixel_threshold": 3.1306915283203125
+  }
+}

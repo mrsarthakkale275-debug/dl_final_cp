@@ -1,0 +1,46 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+*.env
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Downloaded and prepared datasets
+data/raw/
+data/processed/
+
+# Generated storage and reports
+backend/storage/inspection_images/
+backend/storage/reports/
+
+# Runtime cache
+data/**/.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
